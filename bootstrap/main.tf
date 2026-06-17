@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "tfstate" {
-  bucket = "vivek-234121221-rrn"
+  bucket = "shiva-11911-a"
 }
 
 resource "aws_s3_bucket_versioning" "tfstate" {
@@ -27,7 +27,7 @@ resource "aws_s3_bucket_public_access_block" "tfstate" {
 }
 
 resource "aws_dynamodb_table" "tfstate_lock" {
-  name         = "tfstate-lock"
+  name         = "ash-tfstate-lock"
   billing_mode = "PAY_PER_REQUEST"
   hash_key     = "LockID"
   attribute {
